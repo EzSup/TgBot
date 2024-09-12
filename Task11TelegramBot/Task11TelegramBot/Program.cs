@@ -50,7 +50,7 @@ namespace Task11TelegramBot
             Console.ReadLine();
 
             // Send cancellation request to stop bot
-            cts.Cancel();
+            //cts.Cancel();
         }
 
         /// <summary>
