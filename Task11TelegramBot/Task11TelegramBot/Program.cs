@@ -22,7 +22,7 @@ namespace Task11TelegramBot
 
         static async Task Main(string[] args)
         {
-            string configPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "..", "appsettings.json");
+            string configPath = Path.Combine(Directory.GetCurrentDirectory(), "appsettings.json");
             var cofig = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile(configPath, optional: true, reloadOnChange: true)
