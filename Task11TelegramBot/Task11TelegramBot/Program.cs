@@ -47,10 +47,10 @@ namespace Task11TelegramBot
             var me = await botClient.GetMeAsync();
 
             Console.WriteLine($"Start listening for @{me.Username}");
-            Console.ReadLine();
+            await Task.Delay(-1);
 
             // Send cancellation request to stop bot
-            //cts.Cancel();
+            cts.Cancel();
         }
 
         /// <summary>
